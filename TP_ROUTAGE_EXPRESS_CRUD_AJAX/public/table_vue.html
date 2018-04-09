@@ -1,0 +1,26 @@
+<html lang="fr">
+ <head>
+   	<meta charset="UTF-8">
+   	<title>Todo VueJS with fetched data</title>
+	<script src="https://unpkg.com/vue">
+	</script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.core.min.js"></script>
+ </head>
+ <body>
+   
+	<div id="app">
+		<table>
+			<tr>
+				<th>name</th>
+				<th>cuisine</th>
+			</tr>
+			<tr v-for="restaurant in restaurants">
+				<td>{{restaurant.name}}</td>
+				<td>{{restaurant.cuisine}}</td>
+			</tr>
+		</table>
+	</div>
+   
+    <script src="js/vue.js"></script>
+  </body>
+</html>
